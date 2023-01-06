@@ -1,0 +1,134 @@
+@font-face{
+    font-family: '휴먼둥근헤드라인';
+    src: url(../../public/fonts/HMKMRHD.TTF);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'HY견고딕';
+    src: url(../../public/fonts/H2GTRE.TTF);
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+    font-family: 'Montserrat', 'Gothic A1', 'HY견고딕', sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.083em;
+}
+li{
+    list-style: none;
+}
+.h100vh{ height: 100vh;}
+
+#root{
+    a{
+        color:black
+    }
+    a:hover{
+        color:rgb(227, 96, 73);
+    }
+
+    h1{
+        max-width:9.5rem;
+        svg{
+            height:2.8rem;
+            transform: translateY(-30%);
+            transform-origin: center;
+            transition: 0.5s;
+            #blackIcon{
+                transform: translateY(-200%);
+                transition: 0.5s;
+            }
+            #deaback{
+                transform: translateY(-200%);
+                transition: 0.5s;
+            }
+
+        }
+
+    }
+    
+// 상단네비 useEffect & handScroll 함수
+    #hd{
+        background-color: white;
+        &.scroll{
+            background-color: rgba(0,0,0,.5);
+           
+            a{
+                color:white;
+            }
+            h1 svg{
+                transform: translateY(0);
+                g{
+                    g{ fill: white;}
+                }
+                
+                #blackIcon{
+                    transform: translateY(0);
+                }
+                #deaback{
+                    transform: translateY(0);
+                }
+
+            }
+            
+
+        }
+        #allMenu{
+            font-weight: 500;
+        }
+        
+    }
+
+    .workSection{
+        .swiper-wrapper{
+            .swiper-slide{
+                min-height: calc(100vh - 120px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .react{
+                background:url(../../public/img/mainB_1.jpg) no-repeat center;
+                background-size: cover;
+                color:white;
+                @media (max-width:768px) {
+                    background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
+                    
+                }
+            }
+            .boot{
+                background:url(../../public/img/mainB_2.jpg) no-repeat center;
+                background-size: cover;
+                color:white;
+                @media (max-width:768px) {
+                    background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
+                    
+                }
+            }
+            .react{
+                background:url(../../public/img/mainB_3.jpg) no-repeat center;
+                background-size: cover;
+                color:white;
+                @media (max-width:768px) {
+                    background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
+                    
+                }
+            }
+        }
+        .swiper-scrollbar-horizontal{
+            height: 2px;
+            bottom:0;
+            left:0;
+            right:0;
+            width:100%;
+        }
+    }
+
+    .section{
+        height: calc(100vh - 120px);
+        min-height:800px;
+    }
+}

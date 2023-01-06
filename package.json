@@ -6,7 +6,7 @@
   "scripts": {
     "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "front": "cd front && npm start",
+    "front": "cd introduce && npm start",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run front\""
   },
   "keywords": [],

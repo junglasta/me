@@ -1,0 +1,80 @@
+{
+    "kr" : { 
+        "navijson" : 
+                    [
+                        {
+                        "naviText" : "내소개",
+                        "naviLink" : "#me"
+                        },
+                        {
+                        "naviText" : "작업물",
+                        "naviLink" : "#portfolio"
+                        },
+                        {
+                        "naviText" : "면접제안",
+                        "naviLink" : "#preInterview"
+                        }
+                    ],
+        "swiperDB" : [
+                        {
+                        "worktitle" : "리액트광고웹앱",
+                        "worktime" : "4주",
+                        "co" : "단독작업",
+                        "app" : ["illust","photoshop","v-code"],
+                        "cls" : "react"
+                        },
+                        {
+                        "worktitle" : "부트스트랩 퍼블리싱",
+                        "worktime" : "1주",
+                        "co" : "단독작업",
+                        "app" : ["v-code"],
+                        "cls" : "boot"
+                        },
+                        {
+                        "worktitle" : "CMS 그누보드",
+                        "worktime" : "4주",
+                        "co" : "단독작업",
+                        "app" : ["illust","photoshop","v-code"],
+                        "cls" : "sir"
+                        }
+                    ],
+        "preinterviewDB" : 
+                        { "predb1" : [
+                                        {
+                                        "subject" : "협업을 잘 해낼 수 있나요?",
+                                        "content" : "일단 만나봅시다! 사장"
+                                        },
+                                        {
+                                        "subject" : "자신이 생각하는 장점과 단점은?",
+                                        "content" : "그들이 나에게 요구하는것이 나한테 있는지 여부파악하고 잘 써야합니다."
+                                        },
+                                        {
+                                        "subject" : "이전의 경력에서 아쉬운 점이 있어요",
+                                        "content" : "그들이 나에게 요구하는것이 나한테 있는지 여부파악하고 잘 써야합니다."
+                                        },
+                                        {
+                                        "subject" : "기획, 기술, 디자인. 가장 중점을 둔 곳은?",
+                                        "content" : "그들이 나에게 요구하는것이 나한테 있는지 여부파악하고 잘 써야합니다."
+                                        }
+                                    ],
+                            "predb2" : [
+                                        {
+                                        "subject" : "1번 배열 제목1",
+                                        "content" : "props 삽입 영역 비워둠"
+                                        },
+                                        {
+                                        "subject" : "1번 배열 제목2",
+                                        "content" : "props 삽입 영역 비워둠"
+                                        },
+                                        {
+                                        "subject" : "1번 배열 제목3",
+                                        "content" : "props 삽입 영역 비워둠"
+                                        },
+                                        {
+                                        "subject" : "1번 배열 제목4",
+                                        "content" : "props 삽입 영역 비워둠"
+                                        }
+                                    ]
+                        }
+    }
+}
