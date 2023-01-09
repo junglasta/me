@@ -1,15 +1,20 @@
-const express = require('express'); // 서버기능 구현 위한 핵심 모듈인 express 호출
-const path = require('path'); // 경로 기능 구현 위해 모듈 path 호출 (아직 사용x)
-const cors = require('cors'); // 노드 외 서버를 연동하기 위한 모듈
-const app = express(); // express 실행! (←그 자체를 app이라고 부름)
+const express = require('express'); // 서버기능구현을 위한 core 모듈 express 호출
+const path = require('path'); // 경로기능제어하기 위해서 모듈 호출
+const cors = require('cors'); // 다른 서버와 연동호출
+const app = express(); // 실행해라 
 
-app.use(cors()); // app에 cors 미들웨어 삽입 "다른 서버 명령 오면 내치지말고 받아들여 (라우트 중요 메서드)get/post, use"
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/contact');
 
-app.get('/', (req,res) => { // 주소창에 ~/ 치면 → get방식으로 서버 쪽에서 처리
-  res.send({message:'hello'}); // -> 요청패스에 대한 응답할게, {~~}라고!
-});
+app.use(cors()); // cors 미들웨어를 삽입합니다. 다른 도메인에서 너한테 요청오면 응답해줘
 
-//포트는 8080 ex)한국 서버
+app.use('/', indexRouter);
+//추후 리액트 라우터랑 연동할 주소
+//리액트의 연락컴포넌트의 폼태그의 데이터를 비동기로 POST 전송받아 저장할 라우터임
+//결과여부를 리액트 전송할 라우터임
+app.use('/contact', usersRouter);
+//주소창 localhost:8080/contact
+
 app.listen(8080, ()=>{
-  console.log('server is running on 8080') // 요청에 대한 응답
+  console.log('server is running on 8080')
 })
