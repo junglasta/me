@@ -7,3 +7,7 @@
 # 20230105 - 포트8080으로 노드서버 구축완료
 모듈 설치(express, cors, path)
 기타 설치(nodemon, concurrency)
+
+# 20230110 엑시오스 설치
+App.js / view1.js 대강 배치해둠
+추후 각각의 작은 컴퍼넌트들 안에 임포트하고 json 연결하기
